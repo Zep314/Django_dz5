@@ -103,3 +103,4 @@ INFO 2023-10-06 09:02:53,761 create_product 23024 13232 Successfully create prod
 INFO 2023-10-06 09:02:53,765 create_product 23024 13232 Successfully create product: Name: 'Кпсс дальний', Description: 'Поезд кожа человечек дальний мелочь. Дыхание эффект вытаскивать собеседник приличный.', Price: 442.31, Amount: 10,Image: , Create_date: 2023-10-06 06:02:53.762511+00:00 
 INFO 2023-10-06 09:02:53,765 gen_fake_data 23024 13232 Added 50 record into table Products
 INFO 2023-10-06 09:02:55,529 gen_fake_data 23024 13232 Added 200 record into table Orders
+INFO 2023-10-06 15:13:01,538 views 27712 8904 Index page accessed! Redirect to /lastday/0/7

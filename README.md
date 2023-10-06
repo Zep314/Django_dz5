@@ -98,12 +98,6 @@ Many-to-Many с таблицей товаров (Product).
 
 Для более эстетичного восприятия был добавлен [bootstrap](https://getbootstrap.com/)
 
-</details>
-
-Так же - изменяем модель данных - добавляем поле для хранения имени файла-изображения для товара.
-Поле может принимать значение NULL, что указываем в модели данных. Не забываем сделать миграцию.
-
-- [Django_dz5/Django_dz5/myapp5/models.py](/Django_dz5/myapp5/models.py)
 
 Так же - создаем папку для хранения изображений, и указываем ее в настройках 
 
@@ -133,13 +127,50 @@ Many-to-Many с таблицей товаров (Product).
 Прописываем маршрут и класс для отображения формы в файле *urls.py*
 
 - [Django_dz5/Django_dz5/myapp5/urls.py](/Django_dz5/myapp5/urls.py)
+</details>
+
+Создаем пользователя - администратора нашего проекта
+
+    python manage.py createsuperuser
+
+    (venv) PS C:\Work\python\Django\Django_dz5\Django_dz5> python manage.py createsuperuser
+    Имя пользователя: Admin
+    Адрес электронной почты: admin@mail.ru
+    Password:
+    Password (again):
+    Введённый пароль слишком широко распространён.
+    Введённый пароль состоит только из цифр.
+    Bypass password validation and create user anyway? [y/N]: y
+    Superuser created successfully.
+    (venv) PS C:\Work\python\Django\Django_dz5\Django_dz5>
+
+Делаем соответствующие настройки для панели администрирования в файле 
+
+- [Django_dz5/Django_dz5/myapp5/admin.py](/Django_dz5/myapp5/admin.py)
+
+Заходим в панель управления, вводим заданный ранее пароль.
+
+Далее можно управлять данными, которые находятся у нас в безе.
 
 ## Результат работы:
 
-Таблица заказов за 30 дней для определенного клиента:
+Общий вид панели администрирования
+![screen1.png](screen1.png)
 
+Список клиентов
 ![screen2.png](screen2.png)
 
-Форма создания/редактирования товара с возможностью "привязать" изображение:
+Редактирование клиента
+![screen3.png](screen3.png)
 
-![screen1.png](screen1.png)
+Список товаров
+![screen4.png](screen4.png)
+
+Редактирование товара
+![screen5.png](screen5.png)
+
+Список заказов
+![screen6.png](screen6.png)
+
+Редактирование заказа
+![screen7.png](screen7.png)
